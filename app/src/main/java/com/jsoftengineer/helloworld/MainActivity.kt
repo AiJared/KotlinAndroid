@@ -14,13 +14,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // get reference to button
-        val btn_click_me = findViewById(R.id.button) as Button
+        val btnClickMe = findViewById(R.id.button) as Button
         val myTextView = findViewById(R.id.textView) as TextView
         var timesClicked = 0
         // set on-click listener
-        btn_click_me.setOnClickListener {
+        btnClickMe.setOnClickListener {
+            timesClicked += 1
             myTextView.text = timesClicked.toString()
-            timesClicked = timesClicked + 1
             Toast.makeText(this@MainActivity, "Hi Jared", Toast.LENGTH_SHORT).show()
         }
     }
