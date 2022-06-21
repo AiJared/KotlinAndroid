@@ -65,4 +65,15 @@ fun main(){
     var resultDouble: Double
     resultDouble = a / b
     println(resultDouble)
+
+    // Comparison operators are (==, !=, <, >, <=, >=)
+    val isEqual = 5==5
+    println("isEqual is $isEqual")
+
+    val isnotEqual = 5!=5
+    println("isNotEqual is $isnotEqual")
+    //string interpolation
+    println("is-5greater3 ${-5>3}")
+    println("is%5LowerEqual3 ${5 <= 3}")
+    println("is%5GreaterEqual3 ${5 >= 3}")
 }
